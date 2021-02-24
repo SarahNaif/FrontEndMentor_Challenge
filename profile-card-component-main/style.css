@@ -7,7 +7,7 @@ body {
   height: 100vh;
   background-image: url(images/bg-pattern-top.svg),
     url(images/bg-pattern-bottom.svg);
-  background-position: top -640px left -370px, bottom -640px right -370px;
+  background-position: top -70vh left -20vw, bottom -80vh right -20vw;
   overflow: hidden;
   background-color: hsl(185, 75%, 39%);
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 .profileCard {
   background-color: white;
