@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+	font-size: 12px;
+	background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+	background-color: #fff;
+    /* width card size */
+	width: 60%;
+	display: flex;
+    justify-content:space-between;
+	padding: 2rem 1rem;
+	border-radius: 1.3rem;
+}
+/* image section */
+img {
+	margin-left: -5rem;
+    margin-top: 25px;
+}
+.image ::after{
+  
+    
+}
+.image {
+    background: url('https://bobmatyas.github.io/fm-faq-accordion/images/bg-pattern-desktop.svg') center bottom no-repeat;
+    
+    
+	position: relative;
+    /* background: tomato; */
+    display: inline-block;
+   
+        background-position: -75px center, -571px -270px;
+        background-size: 100%, 200%;
+        height: 100%;
+        min-width: 300px;
+        margin: 0;
+        padding: 0;
+        width: 525px;
+        max-width: 500px;
+        position: relative;
+   
+}
+.box {
+	position: absolute;
+	top: 8rem;
+	left: -2rem;
+}
+/* image  - end */
+
+/* heading */
+.menus{
+    /* background-color: teal; */
+    padding: 30px;
+    width: 400px;
+    margin-top: 30px;  
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* heading */
+
+
+/* ------------------------FAQ-------------------------------------- */
+.detail {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin: 20px 0 0 0;
+    padding: 5px 0 20px 0;
+}
+.faq_question{
+    font-size: 0.9rem;
+      
+}
+.faq_text {
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 10px 0 0 0;
+}
+.faq_summary:hover{
+    color: coral;
+    
+}
+.detail[open]  .faq_summary{
+font-weight: 700;
+}
+/* remove default arrow */
+.faq_summary {
+    list-style: none;
+  }
+  .faq_question {
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 90%;
+}
+  .faq_summary { 
+    display: block;
+    padding: 0;
+    position: relative;
+    text-align: right;
+}
+/* arrow down  */
+  .faq_summary:after {
+    display: inline-block;
+    content: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-align: right;
+    padding-bottom: 10px;
+  }
+  /* arrow up */
+  details[open] .faq_summary:after {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    content: "";
+    background-image: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+/* to flip the arrow */
+    transform:scaleY(-1);
+}
+
+/* ------------------------FAQ---END----------------------------------- */
+/* faq media query */
