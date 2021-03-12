@@ -27,10 +27,7 @@ img {
 	margin-left: -5rem;
     margin-top: 25px;
 }
-.image ::after{
-  
-    
-}
+
 .image {
     background: url('https://bobmatyas.github.io/fm-faq-accordion/images/bg-pattern-desktop.svg') center bottom no-repeat;
     
