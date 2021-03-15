@@ -83,8 +83,7 @@ color: white;
   
 }
 .cell p {
-color:white;
-
+color:rgba(255, 255, 255, 0.488);
 }
 .cell .btn {
   display: block;
@@ -95,13 +94,14 @@ color:white;
   padding: 16px 50px;
   font-size: 17px;
   color:white;
-  border: none;
+  border: 1px solid hsl(71, 73%, 54%);
   border-radius: 0.6rem;
   margin-top: 25px; 
+  
+  box-shadow: 0 11px  20px 0px  rgba(83, 83, 83, 0.173), 0 10px 7px 0px  rgba(140, 139, 139, 0.139);
 }
 .cell ul  li {
   list-style: none;
   font-size: 18px;
 color: rgba(255, 255, 255, 0.584);
-
 }
