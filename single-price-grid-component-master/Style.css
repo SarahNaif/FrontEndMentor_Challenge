@@ -20,7 +20,6 @@
     /* width card size */
 	width: 57%;
 	display: flex;
-	/* padding: 3rem 2.9rem; */
 	border-radius: 0.6rem;
 }
 header{
@@ -43,7 +42,6 @@ font-size: 1.2em;
 /* grid div */
 .grid{
   flex: auto; /* fills the remaining part of the viewport below header */
-  background: cyan;
   display: grid;
   /* 1 rows and 2 columns */
   grid-template:  1fr / 1fr 1fr;
@@ -97,11 +95,32 @@ color:rgba(255, 255, 255, 0.488);
   border: 1px solid hsl(71, 73%, 54%);
   border-radius: 0.6rem;
   margin-top: 25px; 
-  
   box-shadow: 0 11px  20px 0px  rgba(83, 83, 83, 0.173), 0 10px 7px 0px  rgba(140, 139, 139, 0.139);
 }
 .cell ul  li {
   list-style: none;
   font-size: 18px;
 color: rgba(255, 255, 255, 0.584);
+}
+@media (max-width:675px){
+  body{
+    overflow: auto;
+  }
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.grid{
+  display: grid;
+  /* 1 rows and 2 columns */
+  grid-template:  1fr 1fr/ 1fr ;
+}
+
+.cell.two {
+  border-radius: 0px  0px 0.6rem 0.6rem;
+}
+.cell.one{
+  border-radius: 0px;
+}
+
 }
