@@ -7,7 +7,7 @@
   body {
     height: 100vh;
     overflow: hidden;
-    background-color: hsl(185, 75%, 39%);
+    background-color: #e6eff6;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center; 
@@ -18,11 +18,13 @@
 .container{
   background-color: #fff;
     /* width card size */
-	width: 60%;
+	width: 57%;
 	display: flex;
-    
-	padding: 3rem 2.9rem;
+	/* padding: 3rem 2.9rem; */
 	border-radius: 0.6rem;
+}
+header{
+  padding: 3rem 2.9rem;
 }
 .parent h1 {
   color:hsl(179, 62%, 43%);
@@ -38,3 +40,68 @@ line-height: 1.7em;
 font-size: 1.2em;
 }
 
+/* grid div */
+.grid{
+  flex: auto; /* fills the remaining part of the viewport below header */
+  background: cyan;
+  display: grid;
+  /* 1 rows and 2 columns */
+  grid-template:  1fr / 1fr 1fr;
+  border-radius: 0px 0px 0.6rem 0.6rem;
+}
+
+.cell.one{
+background-color: #4abebd;
+padding: 3rem 2.9rem;
+border-radius: 0px 0px 0px 0.6rem;
+color: white;
+/* line-height: 2.7rem; */
+}
+.cell.two{
+background-color: #63c3d3;
+width: 100%;
+padding: 3rem 4.3rem;
+border-radius: 0px 0px 0.6rem 0px ;
+color: white;
+}
+.cell h2{
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.cell .price{
+  font-size: 2.5rem;
+  font-weight: 800;
+  
+}
+.cell .small{
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: hsla(203, 44%, 93%, 0.639);
+  vertical-align: 10px;
+  margin-left: 10px;
+  
+}
+.cell p {
+color:white;
+
+}
+.cell .btn {
+  display: block;
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  width: 250px;
+  /* padding: 5px 70px; */
+  padding: 16px 50px;
+  font-size: 17px;
+  color:white;
+  border: none;
+  border-radius: 0.6rem;
+  margin-top: 25px; 
+}
+.cell ul  li {
+  list-style: none;
+  font-size: 18px;
+color: rgba(255, 255, 255, 0.584);
+
+}
